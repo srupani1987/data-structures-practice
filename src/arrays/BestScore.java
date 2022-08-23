@@ -15,6 +15,7 @@ public class BestScore {
     public static void main(String[] args) {
         String firstSecond = firstAndSecond(new Integer[]{1, 2, 4, 6,7, 7, 5, 9 ,22, 3});
         System.out.println(firstSecond);
+
     }
 
     private static String firstAndSecond(Integer[] ints) {
