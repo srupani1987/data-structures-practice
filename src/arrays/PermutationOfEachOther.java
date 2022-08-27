@@ -21,6 +21,7 @@ public class PermutationOfEachOther {
     }
     //Java8
     private static boolean isPermutation(int[] inArray1, int[] inArray2) {
+        System.out.println("im in test1 branch");
         if (inArray1.length != inArray2.length) {
             return false;
         } else {
