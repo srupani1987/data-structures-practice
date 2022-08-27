@@ -19,6 +19,8 @@ public class PermutationOfEachOther {
                 new int[]{1, 3, 2, 4, 6, 5});
         System.out.println(isPermutation);
         System.out.println("test cherry pick");
+        //test
+        //test2
     }
     //Java8
     private static boolean isPermutation(int[] inArray1, int[] inArray2) {
