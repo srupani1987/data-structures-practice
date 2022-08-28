@@ -1,10 +1,7 @@
 package arrays;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
-
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.stream.Collectors;
 
 /**
  * Given an array, write a function to get first, second best scores from the array.
