@@ -11,8 +11,9 @@ public class MissingNumber {
         int sum2 = intList.stream().mapToInt(i -> i).filter(i -> i != 8).sum();
         List<Integer> missingList = intList.stream().filter(in -> in != 7).collect(Collectors.toList());
 
-        int sum = intList.size() * (intList.size() + 1) / 2;  // n * (n +1)/2
+        int sum = intList.size()  * (intList.size() + 1) / 2;  // n * (n +1)/2
         int sum1 = missingList.stream().mapToInt(i -> i).sum(); // sum of elements in missing list
+
 
 
         System.out.println(sum - sum1);
