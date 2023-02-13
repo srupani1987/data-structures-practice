@@ -8,7 +8,7 @@ package recursion;
  *     <li>Step 3 : Get the remainder for the binary digit</li>
  *     <li> step 4 : Repeat the steps until the quotient is equal to 0</li>
  * </ul>
- * <center><b>Below is the formula to convert Decimal to Binary</b></center>
+ * <b>Below is the formula to convert Decimal to Binary</b>
  * <b>f(n) = n mod 2 + 10 * f(n/2)</b>
  */
 class DecimalToBinary {
@@ -19,9 +19,9 @@ class DecimalToBinary {
   }
 
   public static int decimalToBinary(int n) {
-    if (n==0) {
+    if (n == 0) {
       return 0;
     }
-    return n%2 + 10*decimalToBinary(n/2);
+    return n % 2 + 10 * decimalToBinary(n/2);
   }
 }
