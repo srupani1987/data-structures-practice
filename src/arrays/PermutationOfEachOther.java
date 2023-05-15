@@ -36,11 +36,8 @@ public class PermutationOfEachOther {
             OptionalInt product1 = Arrays.stream(inArray1).reduce((i1, i2) -> i1 * i2);
             OptionalInt product2 = Arrays.stream(inArray2).reduce((i1, i2) -> i1 * i2);
 
-            if (sum1 == sum2 && product1.getAsInt() == product2.getAsInt()) {
-                return true;
-            }
+            return sum1 == sum2 && product1.getAsInt() == product2.getAsInt();
         }
-        return false;
     }
 
     //Java 7
@@ -58,10 +55,7 @@ public class PermutationOfEachOther {
             sum2 += inArray2[i];
             mul1 *= inArray1[i];
             mul2 *= inArray2[i];
-            if (sum1 == sum2 && mul1 == mul2) {
-                return true;
-            }
         }
-        return false;
+        return sum1 == sum2 && mul1 == mul2;
     }
 }
