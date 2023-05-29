@@ -1,8 +1,6 @@
 package sorting;
 
 public class BubbleSort {
-
-
     public static void main(String[] args) {
         int[] arr = {3, 5, 2, 1, 6, 8, 4, 9, 7};
         System.out.println(arr);
@@ -20,8 +18,6 @@ public class BubbleSort {
         }
         System.out.println();
         printArray(arr);
-
-
     }
     static void printArray(int[] testArray) {
         for (int in : testArray) {
@@ -29,3 +25,7 @@ public class BubbleSort {
         }
     }
 }
+/**
+ * The bubble sort algorithm is a reliable sorting algorithm. This algorithm has a worst-case time complexity of O(n2).
+ * The bubble sort has a space complexity of O(1). The number of swaps in bubble sort equals the number of inversion pairs in the given array.
+ */

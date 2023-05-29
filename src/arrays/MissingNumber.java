@@ -7,8 +7,11 @@ import java.util.stream.IntStream;
 public class MissingNumber {
     public static void main(String[] args) {
         IntStream intStream = IntStream.rangeClosed(1, 100);
+        int sum3 = intStream.filter(i -> i != 10).sum();
         List<Integer> intList = intStream.boxed().collect(Collectors.toList());
-        int sum2 = intList.stream().mapToInt(i -> i).filter(i -> i != 8).sum();
+        int sum2 = intList.stream()
+                .mapToInt(i -> i)
+                .filter(i -> i != 8).sum();
         List<Integer> missingList = intList.stream().filter(in -> in != 7).collect(Collectors.toList());
 
         int sum = intList.size()  * (intList.size() + 1) / 2;  // n * (n +1)/2
@@ -18,6 +21,9 @@ public class MissingNumber {
 
         System.out.println(sum - sum1);
         System.out.println(sum - sum2);
+
+
+
 
     }
 }

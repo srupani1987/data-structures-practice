@@ -7,8 +7,10 @@ public class DuplicateChars {
     public static void main(String[] args) {
         String word = "JavaJavaEETech";
         char[] chars = word.toCharArray();
-        Map<Character, Long> characterLongMap = word.chars().mapToObj(c -> (char) c)
+        Map<Character, Long> characterLongMap = word.chars()
+                .mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+        System.out.println(characterLongMap);
         characterLongMap.forEach((k,v)-> System.out.println(k + " : "+v));
     }
 }

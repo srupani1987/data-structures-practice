@@ -10,12 +10,12 @@ import java.util.Collections;
 
 public class BestScore {
     public static void main(String[] args) {
-        Integer[] intArray = {30, 1, 2, 4, 6, 7, 7, 5, 9, 22, 32};
+        Integer[] intArray = {30, 1, 2, 4, 6, 7, 7, 5, 9, 22, 32,3};
         String firstSecond = firstAndSecond(intArray);
         System.out.println(firstSecond);
 
         //alternate way without sorting the array
-        //findFirstAndSecond(new Integer[]{30, 1, 2, 4, 6, 7, 7, 5, 9, 22, 3});
+        findFirstAndSecond(new Integer[]{30, 1, 2, 4, 6, 7, 7, 5, 9, 22, 3});
 
 
     }

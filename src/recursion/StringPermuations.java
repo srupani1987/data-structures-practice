@@ -5,7 +5,7 @@ public class StringPermuations {
         String str = "Geek";
         printPermuatations(str, "");
         System.out.println();
-        printDistinctPermutn(str, "");
+        //printDistinctPermutn(str, "");
     }
 
     private static void printPermuatations(String str, String ans) {

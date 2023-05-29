@@ -15,7 +15,7 @@ public class FibonacciSolution {
         if (number == 0 || number == 1) {
             return number;
         }
-        int fibo = fibonacci(number - 1) + fibonacci(number - 2);
-        return fibo;
+        //int fibo = fibonacci(number - 1) + fibonacci(number - 2);
+        return fibonacci(number - 1) + fibonacci(number - 2);
     }
 }

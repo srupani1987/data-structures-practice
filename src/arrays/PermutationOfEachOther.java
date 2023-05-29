@@ -1,7 +1,6 @@
 package arrays;
 
 import java.util.Arrays;
-import java.util.IntSummaryStatistics;
 import java.util.OptionalInt;
 
 /**
@@ -33,7 +32,8 @@ public class PermutationOfEachOther {
             int sum1 = Arrays.stream(inArray1).sum();
             int sum2 = Arrays.stream(inArray2).sum();
 
-            OptionalInt product1 = Arrays.stream(inArray1).reduce((i1, i2) -> i1 * i2);
+            OptionalInt product1 = Arrays.stream(inArray1).
+                    reduce((i1, i2) -> i1 * i2);
             OptionalInt product2 = Arrays.stream(inArray2).reduce((i1, i2) -> i1 * i2);
 
             return sum1 == sum2 && product1.getAsInt() == product2.getAsInt();

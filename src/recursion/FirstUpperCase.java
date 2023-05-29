@@ -10,7 +10,7 @@ package recursion;
  */
 public class FirstUpperCase {
     public static void main(String[] args) {
-        char upper = firstUpper("appmillerS");
+        char upper = firstUpper("appmZillerS");
         System.out.println(upper);
     }
 
