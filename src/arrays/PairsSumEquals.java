@@ -14,14 +14,14 @@ public class PairsSumEquals {
     }
 
     private static String pairSum(int[] inputAray, int targetSum) {
-        String resultString  = "";
+        StringBuilder resultString  = new StringBuilder();
         for (int i=0; i<inputAray.length;  i++) {
             for (int j=i+1; j<inputAray.length; j++) {
                 if (inputAray[i] + inputAray[j] == targetSum) {
-                    resultString += inputAray[i] +":"+inputAray[j] +" ";
+                    resultString.append(inputAray[i]).append(":").append(inputAray[j]).append(" ");
                 }
             }
         }
-        return resultString;
+        return resultString.toString();
     }
 }

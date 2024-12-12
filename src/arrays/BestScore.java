@@ -28,9 +28,9 @@ public class BestScore {
 
         Integer second = null;
 
-        for (int i = 0; i< ints.length; i++) {
-            if (ints[i] != first) {
-                second = ints[i];
+        for (Integer anInt : ints) {
+            if (anInt != first) {
+                second = anInt;
                 break;
             }
         }
@@ -40,12 +40,12 @@ public class BestScore {
     private static void findFirstAndSecond(Integer[] intArray) {
         int max =0; int secondMax = 0;
 
-        for (int i=0; i< intArray.length; i++) {
-            if (intArray[i] > max) {
+        for (Integer integer : intArray) {
+            if (integer > max) {
                 secondMax = max;
-                max = intArray[i];
-            } else if (intArray[i] > secondMax) {
-                secondMax = intArray[i];
+                max = integer;
+            } else if (integer > secondMax) {
+                secondMax = integer;
             }
         }
 
