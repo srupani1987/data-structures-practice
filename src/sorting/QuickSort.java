@@ -44,8 +44,8 @@ public class QuickSort {
     }
 
     public static void printArray(int []array) {
-        for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i]+"  ");
+        for (int j : array) {
+            System.out.print(j + "  ");
         }
     }
 

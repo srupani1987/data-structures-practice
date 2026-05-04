@@ -8,7 +8,7 @@ public class MissingNumber {
     public static void main(String[] args) {
         IntStream intStream = IntStream.rangeClosed(1, 100);
         int sum3 = intStream.filter(i -> i != 10).sum();
-        List<Integer> intList = intStream.boxed().collect(Collectors.toList());
+        List<Integer> intList = intStream.boxed().toList();
         int sum2 = intList.stream()
                 .mapToInt(i -> i)
                 .filter(i -> i != 8).sum();
