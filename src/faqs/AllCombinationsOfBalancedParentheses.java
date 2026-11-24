@@ -4,8 +4,7 @@ import java.util.ArrayList;
 
 public class AllCombinationsOfBalancedParentheses {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         int n = 3;
 
         // vector ans is created to store all the possible
@@ -30,10 +29,7 @@ public class AllCombinationsOfBalancedParentheses {
     // the current string s. s : currently generated string/
     // ans : a vector of strings to store all the valid
     // parentheses.
-    public static void
-    generateParenthesis(int n, int open, int close,
-                        String s, ArrayList<String> ans)
-    {
+    public static void generateParenthesis(int n, int open, int close, String s, ArrayList<String> ans) {
 
         // if the count of both open and close parentheses
         // reaches n, it means we have generated a valid
@@ -48,8 +44,7 @@ public class AllCombinationsOfBalancedParentheses {
         // we can put an open parentheses only if its count
         // until that time is less than n.
         if (open < n) {
-            generateParenthesis(n, open + 1, close, s + "{",
-                    ans);
+            generateParenthesis(n, open + 1, close, s + "{", ans);
         }
 
         // At any index i in the generation of the string s,
@@ -57,15 +52,14 @@ public class AllCombinationsOfBalancedParentheses {
         // until that time is less than the count of open
         // parentheses.
         if (close < open) {
-            generateParenthesis(n, open, close + 1, s + "}",
-                    ans);
+            generateParenthesis(n, open, close + 1, s + "}", ans);
         }
     }
 }
 
 /**
  * Complexity Analysis:
- *
+ * <p>
  * Time Complexity: O(2^n).
  * For every index there can be two options ‘{‘ or ‘}’. So it can be said that the upper bound of time complexity is O(2^n) or it has exponential time complexity.
  * Auxiliary Space: O(n).
